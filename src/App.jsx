@@ -1,19 +1,19 @@
-import { UserForm } from "./UserForm";
-import { UserProfile } from "./UserProfile";
-import { Product } from "./Product";
+import { CardWrapper } from "./CardWrapper";
+import { Greeting } from "./Greeting";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Product
-        title="Laptop Stand"
-        price={22000.99}
-        inStock={true}
-        categories={["computer, laptop"]}
-      />
-      <UserProfile />
-      <UserForm />
+      <CardWrapper title="User Profile">
+        <p>Bruce Zan</p>
+        <p>bruce@gmail.com</p>
+        <button>Edit Profile</button>
+      </CardWrapper>
+      <Greeting name="Fredrick" message="Good day" />
+      <Greeting name="John" />
+      <Greeting message="Good morning" />
+      <Greeting />
     </>
   );
 }
