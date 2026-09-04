@@ -1,11 +1,13 @@
 import { ProductList } from "./ProductList";
 import { CardWrapper } from "./CardWrapper";
 import { Greeting } from "./Greeting";
+import { NameList } from "./NameList";
 import "./App.css";
 
 function App() {
   return (
     <>
+      <NameList />
       <ProductList />
       <CardWrapper title="User Profile">
         <p>Bruce Zan</p>
