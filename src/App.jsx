@@ -2,11 +2,14 @@ import { ProductList } from "./ProductList";
 import { CardWrapper } from "./CardWrapper";
 import { Greeting } from "./Greeting";
 import { NameList } from "./NameList";
+import { Alert } from "./Alert";
 import "./App.css";
 
 function App() {
   return (
     <>
+      <Alert>your work as been saved!</Alert>
+      <Alert type="error">something went wrong!</Alert>
       <NameList />
       <ProductList />
       <CardWrapper title="User Profile">
